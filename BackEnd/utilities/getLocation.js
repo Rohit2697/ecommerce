@@ -8,6 +8,7 @@ const getLocation = async (latitute, longitute) => {
             "," +
             longitute +
             "&units=m";
+      
         const { data } = await axios.get(url)
 
         return { location: data.location.name, country: data.location.country, state: data.location.region, temp: data.current.temperature + "°C" }
