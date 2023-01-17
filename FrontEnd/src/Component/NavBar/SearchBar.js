@@ -3,6 +3,7 @@ import React from 'react'
 export default function SearchBar() {
     const searchBar={
         width:"400px"
+        
     }
     return (
         <form className="mx-auto" style={searchBar}>
