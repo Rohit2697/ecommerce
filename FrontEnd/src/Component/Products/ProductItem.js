@@ -49,8 +49,8 @@ export default function ProductItem(props) {
                     {<div className='card-text'>{discountPrice ? <del> &#8377;{price}</del> : ""}&nbsp;  &#8377;{newPrice} &nbsp; {newDiscount}</div>}
                 </div>
                 <div className='row justify-content-center mb-2 gap-2'>
-                    <button onClick={buyNow} type="button" class="col btn btn-warning fw-bold">Warning</button>
-                    <button onClick={addToCart} type="button" class="col btn btn-secondary fw-bold">Cart</button>
+                    <button onClick={buyNow} type="button" className="col btn btn-warning fw-bold">Buy Now</button>
+                    <button onClick={addToCart} type="button" className="col btn btn-secondary fw-bold">Cart</button>
                     {/* <div onClick={buyNow} href="#" className="col btn bg-warning bg-gradient fw-bold">Buy Now</div>
                     <div onClick={addToCart} href="#" className="col btn bg-light fw-bold bg-gradient fw-bold">Add To Cart</div> */}
                 </div>

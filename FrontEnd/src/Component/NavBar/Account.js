@@ -1,18 +1,21 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import style from './NavBar.module.css'
+console.log(style)
 export default function Account() {
 
-    const [AccountName, setAccountName] = useState("Rohit")
+    const [AccountName] = useState("Rohit")
     return (
-        <div className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div className={`nav-item dropdown `}>
+            <Link className={"nav-link dropdown-toggle "+ `${style.navLinkCustom}`} to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Hello {AccountName}
-            </a>
+            </Link>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
+                <li><Link className="dropdown-item" to="#">Action</Link></li>
+                <li><Link className="dropdown-item" to="#">Another action</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                <li><Link className="dropdown-item" to="#">Something else here</Link></li>
             </ul>
         </div>
     )

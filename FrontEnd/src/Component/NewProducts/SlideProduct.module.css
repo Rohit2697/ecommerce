@@ -1,5 +1,17 @@
-.w-100-custom{
-    width: 100% !important;
+.w-100-custom {
+    width: 30% !important;
     height: 250px !important;
+    margin-left: 12% !important;
+}
 
+.textCustomisation {
+    left: 29% !important;
+    bottom: 5.25rem !important;
+}
+
+.background {
+    background-image: url('../../image/slidingProductBG.jpg');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }

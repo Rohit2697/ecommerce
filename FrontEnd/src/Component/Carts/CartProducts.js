@@ -10,8 +10,8 @@ export default function CartProducts(props) {
 
 
             {cartProducts.length ?
-                <div className='row justify-content-evenly'>
-                    <div className='col-8'>
+                <div className='row '>
+                    <div className='col'>
                         <div className='row'>
                             {cartProducts.map((item) => {
                                 return (
@@ -25,7 +25,7 @@ export default function CartProducts(props) {
 
                         </div>
                     </div>
-                    <div className='col-4'>
+                    <div className='col col-lg-3'>
                         <ItemDetails />
                     </div>
                 </div>

@@ -1,0 +1,11 @@
+.addBorderTop{
+border-top: 1px solid black !important;
+}
+
+.addBorderBottom{
+    border-bottom: 1px Solid black !important;
+}
+
+.itemBody{
+    width: 18rem !important;
+}

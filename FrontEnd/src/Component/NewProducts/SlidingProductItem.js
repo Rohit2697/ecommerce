@@ -1,13 +1,14 @@
 import React from 'react'
 import style from './SlideProduct.module.css'
+
 export default function SlidingProductItem(props) {
     return (
         <>
 
-            <div className={`carousel-item ${props.extraclassName}`} data-bs-interval="10000">
+            <div className={`carousel-item ${props.extraclassName+' '+style.background}`} data-bs-interval="10000">
                 <img src={props.newProduct.image} className={`d-block ${style['w-100-custom']}`} alt="..." />
-                <div className="carousel-caption d-none d-md-block">
-                    <h5 >{props.newProduct.name}</h5>
+                <div className={`carousel-caption d-none fs-4 d-md-block ${style.textCustomisation}`}>
+                    <h2 >{props.newProduct.name}</h2>
                     <p>{props.newProduct.Desc}</p>
                 </div>
             </div>

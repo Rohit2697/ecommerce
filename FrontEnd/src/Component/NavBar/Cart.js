@@ -12,7 +12,7 @@ export default function Cart() {
 
     return (
 
-        <button type="button" onClick={goToCartPage} className="btn btn-secondary position-relative">
+        <button type="button" onClick={goToCartPage} className="btn btn-warning position-relative">
             cart
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 {cartItemNo}
