@@ -22,9 +22,12 @@ export default function CartItem(props) {
             <img src={image} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{`${name} (${Qty})`}</h5>
-                <h5 className="card-text">{`Total: ${price}`}</h5>
-                <button onClick={addItem} className="btn bg-warning bg-gradient fs-3">+</button>
-                <button onClick={removeItem} className="ms-1 btn bg-light bg-gradient fs-3">-</button>
+                <h5 className="card-text">Total: &#8377;{price}</h5>
+                <div className='row justify-content-center mb-2 gap-2'>
+                <button onClick={addItem} className="col btn btn-warning fw-bold">+</button>
+                <button onClick={removeItem} className="col btn btn-secondary fw-bold">-</button>
+                </div>
+               
             </div>
         </div>
     )
